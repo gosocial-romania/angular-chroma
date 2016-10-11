@@ -7,7 +7,7 @@
  * # chromaWrapper
  * Service in the brandDashboardApp.
  */
-angular.module('chroma.angularChroma',[])
+var chroma = angular.module('chroma.angularChroma',[])
 	.service('chroma', function chromaWrapper() {
 
 		var Service = {};
@@ -2481,3 +2481,7 @@ angular.module('chroma.angularChroma',[])
 		return Service;
 
 	});
+
+if(module && module.exports !== undefined){
+   module.exports = chroma.name;
+}
